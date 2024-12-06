@@ -1,0 +1,173 @@
+.presentation {
+  overflow: hidden;
+  display: flex;
+}
+
+.pSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pTitle {
+  margin-top: 50px;
+  font-size: 3.5rem;
+  /* color: #32CD32;
+    color: #FFD700;
+    color: #FF7F50;
+    color: #00FFFF; */
+  color: #ffa07a;
+}
+
+.pTitle span {
+  color: white;
+}
+
+.pLinkList{
+  margin-bottom: 220px;
+}
+
+.pLinkList h2 {
+  font-size: 1.6rem;
+  margin: 16px 0;
+}
+
+.pLinkList ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pLinkList a {
+  color: #87b7e7;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.pLinkList a:hover {
+  background-color: rgba(218, 238, 252, 0.2);
+  color: #ff7f50;
+}
+
+.pAnimatedArrow {
+  text-align: center;
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+.pSection.right {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+}
+
+.socialmediasList img {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialmediasList li :hover {
+  transform: scale(1.35);
+}
+
+.bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.pImg{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 80%;
+  width: max-content;
+  
+}
+
+.pImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:1536px){
+  .pTitle {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width:1280px){
+  .bg{
+    height: 80%;
+    bottom: 0;
+    top: auto;
+  }
+
+  .pTitle {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width:1024px){
+  .bg{
+    height: 65%;
+  }
+}
+
+@media (max-width:768px){
+  .presentation {
+    flex-direction: column;
+  }
+
+  .bg{
+    height: 50%;
+  }
+
+  .pTitle {
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .pSection {
+    width: 100%;
+  }
+
+  .pSection.right {
+    align-items: normal;
+  }
+
+  .pSection.left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .pAnimatedArrow{
+    display: none;
+  }
+
+  .pLinkList {
+    margin: 0;
+  }
+
+  .pSection.right {
+    flex-direction: row;
+  }
+
+  .socialmediasList ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+}
