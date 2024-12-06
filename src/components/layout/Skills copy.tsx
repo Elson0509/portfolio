@@ -1,6 +1,6 @@
 "use client";
 
-import TitleSection from "../TitleSection";
+import TitleSection from "../DistortedShape";
 import { motion } from "framer-motion";
 import { Sour_Gummy } from "next/font/google";
 

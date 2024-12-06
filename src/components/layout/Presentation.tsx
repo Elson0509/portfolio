@@ -2,6 +2,9 @@ import "./presentation.css";
 import AnimatedDown from "../AnimatedDown";
 import { Raleway } from "next/font/google";
 import { motion } from "motion/react";
+import { Canvas } from "@react-three/fiber";
+import DistortedShape from "../DistortedShape";
+import { Suspense } from "react";
 
 const relaway = Raleway({
   subsets: ["latin"],
@@ -121,6 +124,12 @@ const Presentation = () => {
       </div>
       {/* Background */}
       <div className="bg prevent-select">
+        {/* 3d */}
+        <Canvas>
+          <Suspense fallback="loading...">
+          <DistortedShape/>
+          </Suspense>
+        </Canvas>
         <div className="pImg">
           <img src="imgs/profile.png" alt="Profile Background" />
         </div>
