@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { Canvas } from "@react-three/fiber";
 import DistortedShape from "../DistortedShape";
 import { Suspense } from "react";
+import Link from "next/link";
 
 const relaway = Raleway({
   subsets: ["latin"],
@@ -62,13 +63,13 @@ const Presentation = () => {
           </motion.h2>
           <motion.ul>
             <motion.li variants={item}>
-              <a href="#skills">Skills</a>
+              <Link href="#skills">Skills</Link>
             </motion.li>
             <motion.li variants={item}>
-              <a href="#project">Featured Project</a>
+              <Link href="#project">Featured Project</Link>
             </motion.li>
             <motion.li variants={item}>
-              <a href="#contact">Contact</a>
+              <Link href="#contact">Contact</Link>
             </motion.li>
           </motion.ul>
         </motion.div>

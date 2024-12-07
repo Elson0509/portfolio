@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Presentation from "@/components/layout/Presentation";
 import Skills from "@/components/layout/Skills";
+import Project from "@/components/layout/Project";
 import SplashScreen from "@/components/SplashScreen";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
     <>
       <main className="container">
         <Presentation />
+        <Project />
         <Skills />
       </main>
     </>

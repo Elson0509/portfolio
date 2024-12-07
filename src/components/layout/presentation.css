@@ -55,7 +55,9 @@
 .pAnimatedArrow {
   text-align: center;
   width: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 .pSection.right {
@@ -92,7 +94,6 @@
   margin: auto;
   height: 80%;
   width: max-content;
-  
 }
 
 .pImg img{
@@ -128,6 +129,7 @@
 @media (max-width:768px){
   .presentation {
     flex-direction: column;
+    align-items: center;
   }
 
   .bg{

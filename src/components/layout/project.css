@@ -1,0 +1,42 @@
+.project {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.presentationSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video {
+    max-height: 100vh;
+    padding: 3rem;
+}
+
+.mockImage {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.pVideo {
+  display: block;
+}
+
+.pImage {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pVideo {
+    display: none;
+  }
+
+  .pImage {
+    display: flex;
+    
+  }
+}
