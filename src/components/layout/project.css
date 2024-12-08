@@ -4,7 +4,7 @@
   display: flex;
 }
 
-.presentationSection {
+.projectSection {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -12,22 +12,93 @@
 }
 
 .video {
-    max-height: 100vh;
-    padding: 3rem;
+  max-height: 100vh;
+  padding: 3rem;
 }
 
 .mockImage {
-    max-width: 100%;
-    height: auto;
-    
+  max-width: 100%;
+  height: auto;
+}
+
+.projectTitle {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.projectSection .left {
+  padding: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.projectSection .left:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 10px;
+  background: #062a4f;
+}
+
+.projectDescription {
+  color: #ded;
+}
+
+.projectSection .left:hover > .projectDescription {
+  color: white;
+}
+.projectSection .left:hover > .projectTitle {
+  color: #ffa07a;
+}
+
+.projectSection .left .button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #0e74bc;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.projectSection .left .button:hover {
+  background-color: #084c8d;
+  transform: scale(1.05);
+}
+
+.projectSection .left .button:active {
+  background-color: #062a4f;
+  transform: scale(0.95);
+}
+
+.projectDescription p {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+  font-size: 1.2rem;
 }
 
 .pVideo {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .pImage {
   display: none;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+@media (max-width: 1024px) {
+  .projectTitle {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .projectDescription p {
+    line-height: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -37,6 +108,30 @@
 
   .pImage {
     display: flex;
-    
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .project {
+    flex-direction: column-reverse;
+  }
+  
+  .projectSection {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+
+  .projectTitle {
+    font-size: 2rem;
+  }
+
+  .projectDescription p {
+    letter-spacing: 1.2px;
+    line-height: 1.2rem;
+  }
+
+  .projectSection .left {
+    padding: 20px;
   }
 }
