@@ -21,13 +21,6 @@
   height: auto;
 }
 
-.projectTitle {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
 .projectSection .left {
   padding: 40px;
   transition: all 0.2s ease-in-out;
@@ -47,7 +40,7 @@
 .projectSection .left:hover > .projectDescription {
   color: white;
 }
-.projectSection .left:hover > .projectTitle {
+.projectSection .left:hover > h1{
   color: #ffa07a;
 }
 
@@ -91,11 +84,6 @@
 }
 
 @media (max-width: 1024px) {
-  .projectTitle {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-
   .projectDescription p {
     line-height: 1.5rem;
   }
@@ -122,13 +110,20 @@
     align-items: center;
   }
 
-  .projectTitle {
-    font-size: 2rem;
-  }
-
   .projectDescription p {
     letter-spacing: 1.2px;
     line-height: 1.2rem;
+  }
+
+  .projectSection .left {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 468px) {
+  .projectDescription p {
+    letter-spacing: 1px;
+    line-height: 1.1rem;
   }
 
   .projectSection .left {

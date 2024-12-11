@@ -42,6 +42,11 @@ li{
   user-select: none;
 }
 
+.highlightHover:hover {
+  color: #ffa07a;
+  transition: all 0.2s linear;
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;

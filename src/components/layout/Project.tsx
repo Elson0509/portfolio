@@ -2,9 +2,10 @@ import { Suspense } from "react";
 import Link from "next/link";
 import "./project.css";
 import { motion } from "framer-motion";
-import { Chakra_Petch, Simonetta } from "next/font/google";
+import { Simonetta, Georama } from "next/font/google";
+import Title from "../texts/Title";
 
-const chakra = Chakra_Petch({
+const georama = Georama({
   weight: ["400"],
   subsets: ["latin"],
   display: "swap",
@@ -20,7 +21,8 @@ const Project = () => {
     <section className="project" id="project">
       <div className="projectSection">
         <div className="left">
-          <h1 className={`projectTitle ${chakra.className}`}>Featured Project</h1>
+          {/* <h1 className={`projectTitle ${georama.className}`}>Featured Project</h1> */}
+          <Title title="Featured Project"/>
           <div className="projectDescription">
             <p className={`${simonetta.className}`}>
               A modern solution for patrol execution and service monitoring,
@@ -32,7 +34,7 @@ const Project = () => {
               improved oversight and decision-making.
             </p>
           </div>
-          <Link href="/web/featureproject" className="button">
+          <Link href="/web/featuredproject" className="button">
             View Project Details
           </Link>
         </div>
