@@ -55,22 +55,23 @@ const Presentation = () => {
             <br />
             <span>I&apos;m Elson</span>
           </motion.h1>
-          {/* Links List */}
           <motion.div
             initial="hidden"
             whileInView={isInView ? "visible" : "hidden"}
             variants={list}
             className="pLinkList"
-          >
+            >
             <motion.h2 className={`${relaway.className}`} variants={item}>
               Web Developer
             </motion.h2>
+            <motion.p variants={item}>Based in London Ontario</motion.p>
+            {/* Links List */}
             <motion.ul>
               <motion.li variants={item}>
-                <Link href="#skills">Skills</Link>
+                <Link href="#project">Featured Project</Link>
               </motion.li>
               <motion.li variants={item}>
-                <Link href="#project">Featured Project</Link>
+                <Link href="#skills">Skills</Link>
               </motion.li>
               <motion.li variants={item}>
                 <Link href="#contact">Contact</Link>

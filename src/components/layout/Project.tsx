@@ -2,14 +2,9 @@ import { Suspense } from "react";
 import Link from "next/link";
 import "./project.css";
 import { motion } from "framer-motion";
-import { Simonetta, Georama } from "next/font/google";
+import { Simonetta } from "next/font/google";
 import Title from "../texts/Title";
 
-const georama = Georama({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-});
 const simonetta = Simonetta({
   weight: ["400"],
   subsets: ["latin"],
@@ -21,7 +16,6 @@ const Project = () => {
     <section className="project" id="project">
       <div className="projectSection">
         <div className="left">
-          {/* <h1 className={`projectTitle ${georama.className}`}>Featured Project</h1> */}
           <Title title="Featured Project"/>
           <div className="projectDescription">
             <p className={`${simonetta.className}`}>

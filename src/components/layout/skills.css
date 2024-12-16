@@ -30,11 +30,6 @@
   align-items: center;
 }
 
-/* .skillItem:hover h2{
-  color: #ffa07a;
-  transition: all 0.2s linear;
-} */
-
 .skillImg img {
   margin-top: 10px;
   height: 6rem;
@@ -84,7 +79,7 @@
 
 @media (max-width: 468px) {
   .skillsList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     padding: 1rem;
   }
@@ -94,11 +89,11 @@
   }
 
   .skillImg img {
-    margin-top: 0px;
-    height: 2.5rem;
+    margin-top: 10px;
+    height: 2rem;
   }
 
   .skillText h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

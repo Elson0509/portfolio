@@ -30,7 +30,12 @@
 
 .pLinkList h2 {
   font-size: 1.6rem;
-  margin: 16px 0;
+  margin: 16px 0 0 0;
+}
+
+.pLinkList p {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
 }
 
 .pLinkList ul {
@@ -171,5 +176,16 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media (max-width: 468px) {
+  .pTitle {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .bg{
+    height: 40%;
   }
 }

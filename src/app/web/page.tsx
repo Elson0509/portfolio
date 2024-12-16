@@ -4,6 +4,7 @@ import { useState } from "react";
 import Presentation from "@/components/layout/Presentation";
 import Skills from "@/components/layout/Skills";
 import Project from "@/components/layout/Project";
+import Contact from "@/components/layout/Contact";
 import SplashScreen from "@/components/SplashScreen";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Presentation />
         <Project />
         <Skills />
+        <Contact />
       </main>
     </>
   );
