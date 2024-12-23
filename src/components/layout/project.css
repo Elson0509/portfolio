@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.smallMockup{
+  display: none;
+}
+
 .video {
   max-height: 100vh;
   padding: 3rem;
@@ -137,5 +141,14 @@
 
   .projectSection .left {
     padding: 5px;
+  }
+
+  .smallMockup{
+    display: block;
+    align-self: center;
+    float: right;
+    width: 50%;
+    height: 50%;
+    margin: 10px auto;
   }
 }

@@ -16,7 +16,14 @@ const Project = () => {
     <section className="project" id="project">
       <div className="projectSection">
         <div className="left">
-          <Title title="Featured Project"/>
+          <Title title="Featured Project" />
+          <div>
+            <img
+              src="/imgs/mockup-min.png"
+              alt="Mockup Ronda Fácil"
+              className="smallMockup"
+            />
+          </div>
           <div className="projectDescription">
             <p className={`${simonetta.className}`}>
               A modern solution for patrol execution and service monitoring,

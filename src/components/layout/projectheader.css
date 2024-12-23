@@ -1,0 +1,85 @@
+.pheader {
+  padding: 3rem;
+}
+
+.pheader .title {
+  line-height: 4.5rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.pheader .title span {
+  color: #ffa07a;
+}
+
+.pheaderDescription {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pheader hr {
+  clear: both;
+  margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+
+.pheaderDescription .left {
+  line-height: 1.4rem;
+}
+
+.pheaderDescription .right {
+  display: flex;
+  justify-content: center;
+}
+
+.pheaderDescription .right iframe {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+}
+
+.pheaderDescription div {
+  width: 50%;
+}
+
+.features{
+  display: flex;
+  gap: 1rem;
+}
+
+.features .item{
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.features .counter p{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 3rem;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 468px) {
+}

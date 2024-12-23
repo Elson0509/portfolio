@@ -1,0 +1,24 @@
+.fixed-back-arrow{
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    z-index: 1000;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.fixed-back-arrow:hover{
+  scale: 1.2;
+  transition: all 0.5s ease;
+}
+
+@media (max-width:1280px){
+  
+}
+
+@media (max-width: 1024px) {
+  .fixed-back-arrow{
+    display: none;
+  }
+}

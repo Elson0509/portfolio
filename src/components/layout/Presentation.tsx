@@ -4,7 +4,7 @@ import { Raleway } from "next/font/google";
 import { motion, useInView } from "motion/react";
 import { Canvas } from "@react-three/fiber";
 import DistortedShape from "../DistortedShape";
-import { Suspense, useEffect, useRef } from "react";
+import { Suspense, useRef } from "react";
 import Link from "next/link";
 
 const relaway = Raleway({
