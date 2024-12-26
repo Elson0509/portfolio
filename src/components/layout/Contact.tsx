@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./contact.css";
-import { motion, useScroll, useTransform } from "motion/react";
 import { Quantico } from "next/font/google";
 import emailjs from "@emailjs/browser";
 import contactmation from "@/assets/animations/contactmation.json";
 import emailSentAnimation from "@/assets/animations/emailsent.json";
 import loadingAnimation from "@/assets/animations/loading.json";
+import errorAnimation from "@/assets/animations/error.json";
 import dynamic from "next/dynamic";
 
 const quantico = Quantico({
@@ -15,7 +15,7 @@ const quantico = Quantico({
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
@@ -26,6 +26,16 @@ const Contact = () => {
     e.preventDefault();
     const currentForm = form.current;
     if (currentForm == null) return;
+    //validating if the form is filled
+    if (currentForm.user_username.value === "") {
+      return setError("Please fill in your Name");
+    }
+    if (currentForm.user_email.value === "") {
+      return setError("Please fill a valid Email");
+    }
+    if (currentForm.user_message.value === "") {
+      return setError("Please fill in your message");
+    }
     setLoading(true);
     emailjs
       .sendForm(
@@ -39,12 +49,12 @@ const Contact = () => {
       .then(
         () => {
           setSuccess(true);
-          setError(false);
+          setError('');
           setLoading(false);
         },
         (error) => {
           setSuccess(false);
-          setError(true);
+          setError('');
           setLoading(false);
         }
       );
@@ -76,8 +86,8 @@ const Contact = () => {
             />
           </div>
           <button className="formButton">Send</button>
-          {success && <span>Message successfully sent!</span>}
-          {error && <span>Something went wrong!</span>}
+          {success && <span className="sucess-message">Message successfully sent!</span>}
+          {error && <span className="error-message">{error}</span>}
         </form>
       </div>
       <div className="contactSection">
@@ -90,6 +100,9 @@ const Contact = () => {
           )}
           {success && !error && !loading && (
             <Lottie animationData={emailSentAnimation} loop={false} />
+          )}
+          {error && !loading && (
+            <Lottie animationData={errorAnimation} loop={false} />
           )}
         </div>
       </div>

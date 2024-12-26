@@ -22,7 +22,7 @@
 
 .pheader hr {
   clear: both;
-  margin: 20px 0;
+  margin: 40px 0;
   border: 0;
   height: 1px;
   background-image: linear-gradient(
@@ -34,7 +34,9 @@
 }
 
 .pheaderDescription .left {
-  line-height: 1.4rem;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
 }
 
 .pheaderDescription .right {
@@ -67,6 +69,22 @@
   justify-content: center;
   display: flex;
   font-size: 3rem;
+}
+
+.features svg{
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
+.features svg:hover{
+  scale: 1.2;
+}
+
+.item h3{
+  color: #ffa07a;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 1536px) {

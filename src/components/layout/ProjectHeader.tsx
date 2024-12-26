@@ -1,5 +1,7 @@
 import "./projectheader.css";
 import { Kufam, Poppins, Source_Code_Pro } from "next/font/google";
+import { ImAndroid } from "react-icons/im";
+import { BsGlobe2 } from "react-icons/bs";
 
 const kufam = Kufam({
   subsets: ["latin"],
@@ -49,14 +51,12 @@ const ProjectHeader = () => {
         <div className="pheaderDescription">
           <div className="left">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              nec quam a ipsum bibendum viverra et in felis. Sed dapibus nulla
-              ut sagittis dictum. Sed iaculis ipsum nunc, quis suscipit enim
-              tincidunt et. Vivamus consequat laoreet scelerisque. Aenean
-              bibendum enim quis erat ultrices, nec bibendum sem vehicula. Morbi
-              ac venenatis diam, sed faucibus massa. Donec velit quam, maximus
-              vitae placerat id, accumsan vel dui. Pellentesque sed porta
-              sapien. Quisque tempor placerat elit.
+              Ronda Fácil (Easy Round) simplifies service and patrol management
+              for administrators in Brazilian companies and condominiums. This
+              cross-platform application provides real-time monitoring and
+              inspection capabilities, improving operational efficiency and
+              accountability. It&apos;s currently used daily by employees, ensuring a
+              modern and user-friendly inspection process.
             </p>
           </div>
           <div className="right">
@@ -71,13 +71,13 @@ const ProjectHeader = () => {
         </div>
         <hr />
         <div className="features">
-          <div className='item'>
+          <div className="item">
             <h3 className={poppins.className}>Technology</h3>
-            <p>In sapien ante, congue non libero ac, imperdiet tincidunt erat. </p>
+            <p>Node.js | React Native | Next.Js</p>
           </div>
           <div className="item">
             <h3 className={poppins.className}>Client</h3>
-            <p>In sapien ante, congue non libero ac, imperdiet tincidunt erat. </p>
+            <p>Securewatch Solutions</p>
           </div>
           <div className="item counter">
             <h3 className={poppins.className}>Patrols Done</h3>
@@ -88,8 +88,11 @@ const ProjectHeader = () => {
             <p>34</p>
           </div>
           <div className="item">
-            <h3 className={poppins.className}>Feature 5</h3>
-            <p>In sapien ante, congue non libero ac, imperdiet tincidunt erat. </p>
+            <h3 className={poppins.className}>Platforms</h3>
+            <p>
+              <a href="https://play.google.com/store/apps/details?id=com.newronda" rel="noreferrer nofollow" target="_blank"><ImAndroid /></a>
+              <a href="https://rondafacil.com.br/" rel="noreferrer nofollow" target="_blank"><BsGlobe2 /></a>
+            </p>
           </div>
         </div>
       </div>

@@ -54,6 +54,15 @@ label{
   background-color: #ee9060;
 }
 
+.sucess-message{
+  text-align: center;
+  color: #ffffff;
+}
+.error-message{
+  text-align: center;
+  color: #ee9060;
+}
+
 @media (max-width: 1536px) {
 }
 
