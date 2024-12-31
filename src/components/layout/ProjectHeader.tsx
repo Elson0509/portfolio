@@ -2,6 +2,7 @@ import "./projectheader.css";
 import { Kufam, Poppins, Source_Code_Pro } from "next/font/google";
 import { ImAndroid } from "react-icons/im";
 import { BsGlobe2 } from "react-icons/bs";
+import Counter from "../texts/Counter";
 
 const kufam = Kufam({
   subsets: ["latin"],
@@ -17,27 +18,6 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400"],
 });
-
-const list = {
-  visible: {
-    opacity: 1,
-    transition: {
-      when: "beforeChildren",
-      staggerChildren: 0.3,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    transition: {
-      when: "afterChildren",
-    },
-  },
-};
-
-const item = {
-  visible: { opacity: 1, x: 0 },
-  hidden: { opacity: 0, x: -100 },
-};
 
 const ProjectHeader = () => {
   return (
@@ -81,11 +61,11 @@ const ProjectHeader = () => {
           </div>
           <div className="item counter">
             <h3 className={poppins.className}>Patrols Done</h3>
-            <p>345</p>
+            <Counter target={27508} />
           </div>
           <div className="item counter">
             <h3 className={poppins.className}>Daily Points Read</h3>
-            <p>34</p>
+            <Counter target={283} />
           </div>
           <div className="item">
             <h3 className={poppins.className}>Platforms</h3>
