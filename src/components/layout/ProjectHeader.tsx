@@ -52,7 +52,7 @@ const ProjectHeader = () => {
         <hr />
         <div className="features">
           <div className="item">
-            <h3 className={poppins.className}>Technology</h3>
+            <h3 className={poppins.className}>Technologies</h3>
             <p>Node.js | React Native | Next.Js</p>
           </div>
           <div className="item">
