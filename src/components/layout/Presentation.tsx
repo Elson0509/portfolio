@@ -152,7 +152,7 @@ const Presentation = () => {
             </Suspense>
           </Canvas>
           <div className="pImg">
-            <img src="imgs/profile.png" alt="Profile Background" />
+            <img src="imgs/elson-pic.png" alt="Profile Background" />
           </div>
         </div>
       </div>

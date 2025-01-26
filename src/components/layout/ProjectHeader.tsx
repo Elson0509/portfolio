@@ -41,7 +41,7 @@ const ProjectHeader = () => {
           </div>
           <div className="right">
             <iframe
-              src="https://www.youtube.com/embed/TpqyF9om86w?si=fMOhd9xV_i68Qm5r&amp;controls=0"
+              src="https://www.youtube.com/embed/bHI4hdmL68E?si=dbl_xUeSsNoac0pR&amp;controls=0"
               title="Ronda Fácil - Funcionalidade"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -61,7 +61,7 @@ const ProjectHeader = () => {
           </div>
           <div className="item counter">
             <h3 className={poppins.className}>Patrols Done</h3>
-            <Counter target={27508} />
+            <Counter target={17508} />
           </div>
           <div className="item counter">
             <h3 className={poppins.className}>Daily Points Read</h3>

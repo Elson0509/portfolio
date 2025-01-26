@@ -85,6 +85,7 @@
 .item h3 {
   color: #ffa07a;
   letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1536px) {

@@ -91,13 +91,18 @@
   z-index: -1;
 }
 
+.bg canvas{
+  padding-top: 120px;
+}
+
+
 .pImg{
   position: absolute;
   right: 0;
   left: 0;
   bottom: 0;
   margin: auto;
-  height: 80%;
+  height: 60%;
   width: max-content;
 }
 
@@ -128,6 +133,10 @@
 @media (max-width:1024px){
   .bg{
     height: 65%;
+  }
+
+  .bg canvas{
+    padding-top: 50px;
   }
 }
 

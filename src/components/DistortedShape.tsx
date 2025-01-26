@@ -2,7 +2,7 @@ import { MeshDistortMaterial, Sphere } from "@react-three/drei";
 const DistortedShape = () => {
   return (
     <>
-      <Sphere args={[1, 100, 200]} scale={2.3}>
+      <Sphere args={[1, 100, 200]} scale={2}>
         <MeshDistortMaterial
           color="#FFD700"
           attach="material"
