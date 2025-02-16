@@ -1,0 +1,58 @@
+.tilt-container{
+  position: relative;
+  height: 200px;
+  width: 150px;
+  border-radius: 20px;
+  background: #ffa07a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tilt-translate{
+  position: absolute;
+  inset: 4;
+  display: grid;
+  place-content: center;
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  margin: 10px;
+}
+
+.tilt-pointer{
+  margin: auto;
+  font-size: large;
+}
+
+.tilt-text{
+  text-align: center;
+  font-size: large;
+}
+
+.tilt-icon-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(69, 61, 61, 0.7);
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+  .tilt-container{
+    height: 140px;
+    width: 105px;
+  }
+}
+
+@media (max-width: 468px) {
+
+}

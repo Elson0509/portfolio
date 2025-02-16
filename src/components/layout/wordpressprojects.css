@@ -1,0 +1,83 @@
+.wordpress {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.tilt-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wordpressSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wordpressSection .left {
+  padding: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.wordpressSection .left:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 10px;
+  background: #062a4f;
+}
+
+.wordpressDescription {
+  color: #ded;
+}
+
+.wordpressDescription p {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.wordpressSection .left:hover > .wordpressDescription {
+  color: white;
+}
+.wordpressSection .left:hover > h1{
+  color: #ffa07a;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+  .wordpressSection {
+    width: 100%;
+    align-items: center;
+  }
+
+  .wordpressDescription p {
+    letter-spacing: 1.2px;
+    line-height: 1.2rem;
+  }
+
+  .wordpressSection .left {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 468px) {
+  .wordpressSection{
+    height: 100%;
+  }
+
+  .wordpressDescription p {
+    letter-spacing: 1px;
+    line-height: 1.1rem;
+  }
+
+  .wordpressSection .left {
+    padding: 5px;
+  }
+}

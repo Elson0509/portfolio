@@ -6,6 +6,7 @@ import Skills from "@/components/layout/Skills";
 import Project from "@/components/layout/Project";
 import Contact from "@/components/layout/Contact";
 import SplashScreen from "@/components/SplashScreen";
+import WordpressProjects from "@/components/layout/WordpressProjects";
 
 export default function Home() {
   const [isLoading, setIsloading] = useState(true);
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="container">
         <Presentation />
         <Project />
+        <WordpressProjects />
         <Skills />
         <Contact />
       </main>
